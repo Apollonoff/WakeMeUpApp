@@ -9,9 +9,8 @@ import SwiftUI
 
 struct MainMenuCell: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: 16.0) {
-            Text("Monday, August 31")
-                .font(.title)
+        VStack(spacing: 16.0) {
+            DateText()
             ModDivider()
             HStack {
                 Spacer()
@@ -25,9 +24,18 @@ struct MainMenuCell: View {
             .fixedSize(horizontal: false, vertical: true)
             ModDivider()
             MusicName()
+                .padding(.leading, 10)
+                .padding(.trailing, 10)
             ModDivider()
             NumberOfQuestions()
         }
+    }
+}
+
+struct DateText: View {
+    var body: some View {
+        Text("Monday, August 31")
+            .font(.title)
     }
 }
 
@@ -48,7 +56,7 @@ struct FallSleep: View {
         VStack {
             Image(systemName: "moon.zzz")
                 .resizable()
-                .frame(width: 40, height: 40)
+                .frame(width: 50, height: 50)
             Text("23:30")
                 .font(.title)
         }
@@ -60,7 +68,7 @@ struct WakeUp: View {
         VStack {
             Image(systemName: "sun.max")
                 .resizable()
-                .frame(width: 40, height: 40)
+                .frame(width: 50, height: 50)
             Text("6:30")
                 .font(.title)
         }
@@ -69,9 +77,15 @@ struct WakeUp: View {
 
 struct MusicName: View {
     var body: some View {
-        Text("Bring Me The Horizon - Can You Feel My Heart")
-            .lineLimit(nil)
-            .font(.title2)
+        HStack {
+            Image(systemName: "music.note.list")
+                .resizable()
+                .frame(width: 40, height: 40)
+            Text("Bring Me The Horizon - Can You Feel My Heart")
+                .lineLimit(nil)
+                .font(.title2)
+        }
+        
     }
 }
 
