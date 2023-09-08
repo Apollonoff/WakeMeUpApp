@@ -6,14 +6,28 @@
 //
 
 import SwiftUI
+//rgb(5, 59, 80)
+fileprivate let bgColor: CGColor = CGColor(red: 5/255, green: 59/255, blue: 80/255, alpha: 1)
+
+//let coloredNavAppearance = UINavigationBarAppearance()
 
 struct ContentView: View {
+//    init() {
+//        coloredNavAppearance.backgroundColor = UIColor(cgColor: bgColor)
+//
+//        UINavigationBar.appearance().standardAppearance = coloredNavAppearance
+//        UINavigationBar.appearance().scrollEdgeAppearance = coloredNavAppearance
+//    }
+    
     var body: some View {
         NavigationView {
-            List {
-                MainMenuCell()
-                    .listRowSeparator(.hidden)
-
+            ZStack {
+                Color(cgColor: bgColor).ignoresSafeArea()
+                ScrollView {
+                    MainMenuCell()
+                    MainMenuCell()
+                    MainMenuCell()
+                }
             }
         }
     }
