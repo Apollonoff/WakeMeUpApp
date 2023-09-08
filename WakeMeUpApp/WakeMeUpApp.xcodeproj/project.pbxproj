@@ -13,6 +13,7 @@
 		6630556A2AA0D26E00E61766 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 663055692AA0D26E00E61766 /* Preview Assets.xcassets */; };
 		663055732AA0D69300E61766 /* AlarmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663055722AA0D69300E61766 /* AlarmCell.swift */; };
 		663055782AAB27DB00E61766 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663055772AAB27DB00E61766 /* Data.swift */; };
+		6630557A2AAB2B1B00E61766 /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663055792AAB2B1B00E61766 /* QuizModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		663055692AA0D26E00E61766 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		663055722AA0D69300E61766 /* AlarmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmCell.swift; sourceTree = "<group>"; };
 		663055772AAB27DB00E61766 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		663055792AAB2B1B00E61766 /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				663055772AAB27DB00E61766 /* Data.swift */,
+				663055792AAB2B1B00E61766 /* QuizModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 				663055632AA0D26B00E61766 /* WakeMeUpAppApp.swift in Sources */,
 				663055732AA0D69300E61766 /* AlarmCell.swift in Sources */,
 				663055782AAB27DB00E61766 /* Data.swift in Sources */,
+				6630557A2AAB2B1B00E61766 /* QuizModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
