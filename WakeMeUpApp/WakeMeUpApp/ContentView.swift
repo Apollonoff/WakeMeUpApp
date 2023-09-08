@@ -11,14 +11,7 @@ fileprivate let bgColor: CGColor = CGColor(red: 5/255, green: 59/255, blue: 80/2
 
 //let coloredNavAppearance = UINavigationBarAppearance()
 
-struct ContentView: View {
-//    init() {
-//        coloredNavAppearance.backgroundColor = UIColor(cgColor: bgColor)
-//
-//        UINavigationBar.appearance().standardAppearance = coloredNavAppearance
-//        UINavigationBar.appearance().scrollEdgeAppearance = coloredNavAppearance
-//    }
-    
+struct ContentView: View {    
     var body: some View {
         NavigationView {
             ZStack {
