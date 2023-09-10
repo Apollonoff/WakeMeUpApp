@@ -7,12 +7,6 @@
 
 import SwiftUI
 
-//rgb(23, 107, 135)
-fileprivate var bgColor: CGColor = CGColor(red: 23/255, green: 107/255, blue: 135/255, alpha: 1)
-//rgb(238, 238, 238)
-fileprivate var fontColor: CGColor = CGColor(red: 238/255, green: 238/255, blue: 238/255, alpha: 1)
-//rgb(100, 204, 197)
-fileprivate var dividerColor: CGColor = CGColor(red: 100/255, green: 204/255, blue: 197/255, alpha: 1)
 struct MainMenuCell: View {
     var body: some View {
         VStack(spacing: 16.0) {
@@ -35,7 +29,7 @@ struct MainMenuCell: View {
             ModDivider()
             NumberOfQuestions()
         }
-        .background(Color(bgColor))
+        .background(Color(bgCellColor))
         .cornerRadius(50.0)
         .padding(10)
     
