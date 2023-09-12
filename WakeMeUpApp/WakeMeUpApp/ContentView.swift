@@ -7,24 +7,18 @@
 
 import SwiftUI
 
-struct ContentView: View {    
+struct ContentView: View {
+    
+    @State private var tabSelection = 1
+    
     var body: some View {
-        TabView {
-            TabOne().tabItem {
-                Image(systemName: "house")
-                Text("Main Menu")
-            }
-            .toolbarBackground(
-
-                    // 1
-                Color.init(cgColor: tabBarColor),
-                    // 2
-                    for: .tabBar)
-            
-            Text("Hello")
-                .tabItem {
-                    Text("Hello")
-                }
+        TabView(selection: $tabSelection) {
+            HomeView()
+                .tag(1)
+            Text("Tab content 2")
+                .tag(2)
+            Text("Tab content 3")
+                .tag(3)
         }
     }
 }
