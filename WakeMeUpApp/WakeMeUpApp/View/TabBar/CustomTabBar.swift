@@ -13,9 +13,6 @@ struct CustomTabBar: View {
         VStack {
             Spacer()
             ZStack() {
-                Capsule()
-                    .frame(width: 380, height: 80)
-                    .foregroundColor(Color(cgColor: dividerColor))
                 HStack {
                     Spacer()
                     Button {
