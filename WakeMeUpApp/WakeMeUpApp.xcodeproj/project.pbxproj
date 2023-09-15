@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		660BB2B72AB0D9CD00350DC5 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660BB2B62AB0D9CD00350DC5 /* CustomTabBar.swift */; };
+		660BB2B92AB1B73D00350DC5 /* TabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660BB2B82AB1B73D00350DC5 /* TabBarModel.swift */; };
+		660BB2BD2AB2226800350DC5 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660BB2BC2AB2226800350DC5 /* TabBar.swift */; };
+		660BB2BF2AB32ABC00350DC5 /* IconName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660BB2BE2AB32ABC00350DC5 /* IconName.swift */; };
+		660BB2C52AB3308A00350DC5 /* MediumTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660BB2C42AB3308A00350DC5 /* MediumTabBar.swift */; };
+		660BB2C72AB45B7F00350DC5 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660BB2C62AB45B7F00350DC5 /* TabBarView.swift */; };
 		663055632AA0D26B00E61766 /* WakeMeUpAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663055622AA0D26B00E61766 /* WakeMeUpAppApp.swift */; };
 		663055652AA0D26B00E61766 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663055642AA0D26B00E61766 /* ContentView.swift */; };
 		663055672AA0D26E00E61766 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 663055662AA0D26E00E61766 /* Assets.xcassets */; };
@@ -21,6 +26,11 @@
 
 /* Begin PBXFileReference section */
 		660BB2B62AB0D9CD00350DC5 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		660BB2B82AB1B73D00350DC5 /* TabBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModel.swift; sourceTree = "<group>"; };
+		660BB2BC2AB2226800350DC5 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		660BB2BE2AB32ABC00350DC5 /* IconName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconName.swift; sourceTree = "<group>"; };
+		660BB2C42AB3308A00350DC5 /* MediumTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumTabBar.swift; sourceTree = "<group>"; };
+		660BB2C62AB45B7F00350DC5 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		6630555F2AA0D26B00E61766 /* WakeMeUpApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakeMeUpApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		663055622AA0D26B00E61766 /* WakeMeUpAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeMeUpAppApp.swift; sourceTree = "<group>"; };
 		663055642AA0D26B00E61766 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,10 +103,13 @@
 		6630557B2AAB569F00E61766 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				663055942AB0D55C00E61766 /* TabBar */,
 				6630557E2AAB5A7300E61766 /* Colors.swift */,
 				663055722AA0D69300E61766 /* AlarmCell.swift */,
 				663055892AAE119100E61766 /* HomeView.swift */,
+				660BB2BE2AB32ABC00350DC5 /* IconName.swift */,
+				660BB2B82AB1B73D00350DC5 /* TabBarModel.swift */,
+				660BB2C62AB45B7F00350DC5 /* TabBarView.swift */,
+				663055942AB0D55C00E61766 /* TabBar */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -105,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				660BB2B62AB0D9CD00350DC5 /* CustomTabBar.swift */,
+				660BB2BC2AB2226800350DC5 /* TabBar.swift */,
+				660BB2C42AB3308A00350DC5 /* MediumTabBar.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -179,14 +194,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				660BB2B92AB1B73D00350DC5 /* TabBarModel.swift in Sources */,
 				663055652AA0D26B00E61766 /* ContentView.swift in Sources */,
+				660BB2C72AB45B7F00350DC5 /* TabBarView.swift in Sources */,
 				663055632AA0D26B00E61766 /* WakeMeUpAppApp.swift in Sources */,
 				6630558A2AAE119100E61766 /* HomeView.swift in Sources */,
+				660BB2BF2AB32ABC00350DC5 /* IconName.swift in Sources */,
 				663055732AA0D69300E61766 /* AlarmCell.swift in Sources */,
 				660BB2B72AB0D9CD00350DC5 /* CustomTabBar.swift in Sources */,
 				6630557F2AAB5A7300E61766 /* Colors.swift in Sources */,
 				663055782AAB27DB00E61766 /* Data.swift in Sources */,
 				6630557A2AAB2B1B00E61766 /* QuizModel.swift in Sources */,
+				660BB2C52AB3308A00350DC5 /* MediumTabBar.swift in Sources */,
+				660BB2BD2AB2226800350DC5 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
+   
     var body: some View {
         ZStack {
             Color(cgColor: bgColor).ignoresSafeArea()
@@ -16,7 +17,6 @@ struct HomeView: View {
                 MainMenuCell()
                 MainMenuCell()
             }
-//            CustomTabBar()
         }
         
     }

@@ -9,17 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var tabSelection = 1
-    
     var body: some View {
-        TabView(selection: $tabSelection) {
-            HomeView()
-                .tag(1)
-            Text("Tab content 2")
-                .tag(2)
-            Text("Tab content 3")
-                .tag(3)
-        }
+            TabBarView()
+
     }
 }
 
@@ -29,3 +21,5 @@ struct ContentView_Previews: PreviewProvider {
 //            .preferredColorScheme(.dark)
     }
 }
+
+
