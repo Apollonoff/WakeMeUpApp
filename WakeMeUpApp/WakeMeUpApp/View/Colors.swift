@@ -18,4 +18,4 @@ let fontColor: CGColor = CGColor(red: 238/255, green: 238/255, blue: 238/255, al
 //rgb(100, 204, 197)
 let dividerColor: CGColor = CGColor(red: 100/255, green: 204/255, blue: 197/255, alpha: 1)
 
-let tabBarColor: CGColor = CGColor(red: 5/255, green: 59/255, blue: 80/255, alpha: 0.8)
+let tabBarColor: CGColor = CGColor(red: 5/255, green: 59/255, blue: 80/255, alpha: 0.9)
