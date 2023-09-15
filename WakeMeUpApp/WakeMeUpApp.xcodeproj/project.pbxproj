@@ -13,6 +13,7 @@
 		660BB2BF2AB32ABC00350DC5 /* IconName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660BB2BE2AB32ABC00350DC5 /* IconName.swift */; };
 		660BB2C52AB3308A00350DC5 /* MediumTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660BB2C42AB3308A00350DC5 /* MediumTabBar.swift */; };
 		660BB2C72AB45B7F00350DC5 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660BB2C62AB45B7F00350DC5 /* TabBarView.swift */; };
+		660BB2CA2AB45E2E00350DC5 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660BB2C92AB45E2E00350DC5 /* QuestionView.swift */; };
 		663055632AA0D26B00E61766 /* WakeMeUpAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663055622AA0D26B00E61766 /* WakeMeUpAppApp.swift */; };
 		663055652AA0D26B00E61766 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663055642AA0D26B00E61766 /* ContentView.swift */; };
 		663055672AA0D26E00E61766 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 663055662AA0D26E00E61766 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		660BB2BE2AB32ABC00350DC5 /* IconName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconName.swift; sourceTree = "<group>"; };
 		660BB2C42AB3308A00350DC5 /* MediumTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumTabBar.swift; sourceTree = "<group>"; };
 		660BB2C62AB45B7F00350DC5 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		660BB2C92AB45E2E00350DC5 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		6630555F2AA0D26B00E61766 /* WakeMeUpApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakeMeUpApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		663055622AA0D26B00E61766 /* WakeMeUpAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeMeUpAppApp.swift; sourceTree = "<group>"; };
 		663055642AA0D26B00E61766 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				663055722AA0D69300E61766 /* AlarmCell.swift */,
 				663055892AAE119100E61766 /* HomeView.swift */,
 				660BB2BE2AB32ABC00350DC5 /* IconName.swift */,
+				660BB2C92AB45E2E00350DC5 /* QuestionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				660BB2B72AB0D9CD00350DC5 /* CustomTabBar.swift in Sources */,
 				6630557F2AAB5A7300E61766 /* Colors.swift in Sources */,
 				663055782AAB27DB00E61766 /* Data.swift in Sources */,
+				660BB2CA2AB45E2E00350DC5 /* QuestionView.swift in Sources */,
 				6630557A2AAB2B1B00E61766 /* QuizModel.swift in Sources */,
 				660BB2C52AB3308A00350DC5 /* MediumTabBar.swift in Sources */,
 				660BB2BD2AB2226800350DC5 /* TabBar.swift in Sources */,
