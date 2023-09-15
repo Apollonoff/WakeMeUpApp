@@ -54,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		660BB2C82AB45D1700350DC5 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				660BB2B82AB1B73D00350DC5 /* TabBarModel.swift */,
+				660BB2C62AB45B7F00350DC5 /* TabBarView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		663055562AA0D26B00E61766 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +87,7 @@
 				6630557B2AAB569F00E61766 /* View */,
 				663055742AAB260800E61766 /* Model */,
 				663055662AA0D26E00E61766 /* Assets.xcassets */,
+				663055942AB0D55C00E61766 /* TabBarExperiments */,
 				663055682AA0D26E00E61766 /* Preview Content */,
 			);
 			path = WakeMeUpApp;
@@ -103,25 +113,23 @@
 		6630557B2AAB569F00E61766 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				660BB2C82AB45D1700350DC5 /* TabBar */,
 				6630557E2AAB5A7300E61766 /* Colors.swift */,
 				663055722AA0D69300E61766 /* AlarmCell.swift */,
 				663055892AAE119100E61766 /* HomeView.swift */,
 				660BB2BE2AB32ABC00350DC5 /* IconName.swift */,
-				660BB2B82AB1B73D00350DC5 /* TabBarModel.swift */,
-				660BB2C62AB45B7F00350DC5 /* TabBarView.swift */,
-				663055942AB0D55C00E61766 /* TabBar */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		663055942AB0D55C00E61766 /* TabBar */ = {
+		663055942AB0D55C00E61766 /* TabBarExperiments */ = {
 			isa = PBXGroup;
 			children = (
 				660BB2B62AB0D9CD00350DC5 /* CustomTabBar.swift */,
 				660BB2BC2AB2226800350DC5 /* TabBar.swift */,
 				660BB2C42AB3308A00350DC5 /* MediumTabBar.swift */,
 			);
-			path = TabBar;
+			path = TabBarExperiments;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
