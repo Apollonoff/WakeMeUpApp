@@ -6,28 +6,20 @@
 //
 
 import SwiftUI
-//rgb(5, 59, 80)
-fileprivate let bgColor: CGColor = CGColor(red: 5/255, green: 59/255, blue: 80/255, alpha: 1)
 
-//let coloredNavAppearance = UINavigationBarAppearance()
-
-struct ContentView: View {    
+struct ContentView: View {
+    
     var body: some View {
-        NavigationView {
-            ZStack {
-                Color(cgColor: bgColor).ignoresSafeArea()
-                ScrollView {
-                    MainMenuCell()
-                    MainMenuCell()
-                    MainMenuCell()
-                }
-            }
-        }
+            TabBarView()
+
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+//            .preferredColorScheme(.dark)
     }
 }
+
+
