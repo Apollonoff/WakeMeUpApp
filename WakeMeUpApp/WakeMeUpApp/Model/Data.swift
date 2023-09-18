@@ -8,24 +8,28 @@
 import Foundation
 
 
-func load<T: Decodable>(_ filename: String, as type: T.Type = T.self) -> T {
-    let data: Data
+//let quizz: [QuizModel] = load(
+
+//fileprivate var quizURL: URL = URL(string: "")
+func getAllPosts(_ complitionHandler: ([QuizModel]) -> Void) {
     
-    guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
-        else {
-            fatalError("Couldn't find \(filename) in main bundle.")
-    }
-    
-    do {
-        data = try Data(contentsOf: file)
-    } catch {
-        fatalError("Couldn't load \(filename) from main bundle:\n\(error)")
-    }
-    
-    do {
-        let decoder = JSONDecoder()
-        return try decoder.decode(T.self, from: data)
-    } catch {
-        fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
-    }
+    guard let url = URL(string: "https://jsonplaceholder.typicode.com/posts")
+    else { return }
+    URLSession.shared.dataTask(with: url) { (data, response, error) in
+        
+        if error != nil {
+            print("Something going wrong with error: \(String(describing: error))")
+        } else {
+            if let resp  = response as? HTTPURLResponse,
+               resp.statusCode == 200,
+               let responseData = data {
+                
+                let posts = try? JSONDecoder().decode([QuizModel].self, from: responseData)
+                
+//                    complitionHandler(posts ?? [])
+              
+            }
+        }
+        
+    }.resume()
 }
