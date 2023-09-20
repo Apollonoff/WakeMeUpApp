@@ -13,16 +13,7 @@ fileprivate let bgColor: CGColor = CGColor(red: 5/255, green: 59/255, blue: 80/2
 
 struct ContentView: View {    
     var body: some View {
-        NavigationView {
-            ZStack {
-                Color(cgColor: bgColor).ignoresSafeArea()
-                ScrollView {
-                    MainMenuCell()
-                    MainMenuCell()
-                    MainMenuCell()
-                }
-            }
-        }
+       DataTest()
     }
 }
 

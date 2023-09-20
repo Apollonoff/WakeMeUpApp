@@ -8,28 +8,35 @@
 import Foundation
 
 
-//let quizz: [QuizModel] = load(
-
-//fileprivate var quizURL: URL = URL(string: "")
-func getAllPosts(_ complitionHandler: ([QuizModel]) -> Void) {
+class ViewModel: ObservableObject {
+    @Published private(set) var quiz: [Quiz]?
     
-    guard let url = URL(string: "https://jsonplaceholder.typicode.com/posts")
-    else { return }
-    URLSession.shared.dataTask(with: url) { (data, response, error) in
-        
-        if error != nil {
-            print("Something going wrong with error: \(String(describing: error))")
-        } else {
-            if let resp  = response as? HTTPURLResponse,
-               resp.statusCode == 200,
-               let responseData = data {
-                
-                let posts = try? JSONDecoder().decode([QuizModel].self, from: responseData)
-                
-//                    complitionHandler(posts ?? [])
-              
+    init() {
+        Task.init {
+            await fetchData()
+        }
+    }
+    
+    func fetchData() async {
+        do {
+            guard let url = URL(string: "https://the-trivia-api.com/api/questions/") else { return print("Missing URL")}
+            
+            let urlRequest = URLRequest(url: url)
+            
+            let (data, response) = try await URLSession.shared.data(for: urlRequest)
+            guard (response as? HTTPURLResponse)?.statusCode == 200 else {return print("server error")}
+            
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            let decodedData = try decoder.decode([Quiz].self, from: data)
+            
+            DispatchQueue.main.async {
+                self.quiz = decodedData
             }
         }
-        
-    }.resume()
+        catch {
+            print("Error fetching data with: \(error)")
+        }
+    }
+    
 }
