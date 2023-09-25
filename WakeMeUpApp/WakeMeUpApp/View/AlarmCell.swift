@@ -98,6 +98,7 @@ struct MusicName: View {
                 .font(.title2)
                 .foregroundColor(Color(fontColor))
         }
+        .padding(20)
         
     }
 }
