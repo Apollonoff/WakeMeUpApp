@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-enum complexityColor {
-    case easy
-    case medium
-    case hard
+enum complexity: String {
+    case easy = "Easy"
+    case medium = "Medium"
+    case hard = "Hard"
     
     var customColor: CGColor {
         switch self {
@@ -83,7 +83,7 @@ struct QuestionName: View {
 
 struct ComplexityView: View {
     var body: some View {
-        Text("Difficult")
+        Text(complexity.easy.rawValue)
             .lineLimit(nil)
             .font(.title2)
             .foregroundColor(Color(cgColor: fontColor))
@@ -136,7 +136,7 @@ struct ComplexityCircle: View {
         Image(systemName: "circle.fill")
             .resizable()
             .frame(width: 20, height: 20)
-            .foregroundColor(Color(cgColor: complexityColor.easy.customColor))
+            .foregroundColor(Color(cgColor: complexity.easy.customColor))
     }
 }
 
