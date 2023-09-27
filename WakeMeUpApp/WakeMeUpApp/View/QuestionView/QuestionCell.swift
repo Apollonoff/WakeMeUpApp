@@ -72,7 +72,7 @@ struct HeartButtonView: View {
 
 struct QuestionName: View {
     var body: some View {
-        Text("How old are youmnnsmdnsfknkf msksnfkfnssknfsknfdmsmd s?")
+        Text("How old are you?")
             .lineLimit(nil)
             .font(.title)
             .foregroundColor(Color(cgColor: fontColor))
@@ -93,7 +93,7 @@ struct ComplexityView: View {
 
 struct GenreView: View {
     var body: some View {
-        Text("Genrskndksndjnsjdfnjdnfkndneksfn")
+        Text("Genre")
             .lineLimit(nil)
             .font(.title2)
             .foregroundColor(Color(cgColor: fontColor))

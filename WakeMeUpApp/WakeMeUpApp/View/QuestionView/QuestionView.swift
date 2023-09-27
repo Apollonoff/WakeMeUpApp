@@ -12,7 +12,7 @@ struct QuestionView: View {
         ZStack {
             Color(cgColor: bgColor).ignoresSafeArea()
             VStack {
-//                SortPicker()
+                SortPicker()
                 ScrollView {
                     QuestionCell()
                     QuestionCell()
