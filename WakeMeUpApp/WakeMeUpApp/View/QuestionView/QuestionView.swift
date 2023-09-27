@@ -11,13 +11,16 @@ struct QuestionView: View {
     var body: some View {
         ZStack {
             Color(cgColor: bgColor).ignoresSafeArea()
-            ScrollView {
-                QuestionCell()
-                QuestionCell()
-                QuestionCell()
-                QuestionCell()
-                QuestionCell()
-                QuestionCell()
+            VStack {
+//                SortPicker()
+                ScrollView {
+                    QuestionCell()
+                    QuestionCell()
+                    QuestionCell()
+                    QuestionCell()
+                    QuestionCell()
+                    QuestionCell()
+                }
             }
         }
     }

@@ -24,6 +24,7 @@
 		6630557F2AAB5A7300E61766 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6630557E2AAB5A7300E61766 /* Colors.swift */; };
 		6630558A2AAE119100E61766 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663055892AAE119100E61766 /* HomeView.swift */; };
 		66DBA4AE2AC32433003F116E /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DBA4AD2AC32433003F116E /* QuestionCell.swift */; };
+		66DBA4B42AC469CA003F116E /* SortPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DBA4B32AC469CA003F116E /* SortPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		6630557E2AAB5A7300E61766 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		663055892AAE119100E61766 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		66DBA4AD2AC32433003F116E /* QuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
+		66DBA4B32AC469CA003F116E /* SortPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,13 +119,11 @@
 		6630557B2AAB569F00E61766 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				660BB2C82AB45D1700350DC5 /* TabBar */,
 				6630557E2AAB5A7300E61766 /* Colors.swift */,
-				66DBA4AD2AC32433003F116E /* QuestionCell.swift */,
-				663055722AA0D69300E61766 /* AlarmCell.swift */,
-				663055892AAE119100E61766 /* HomeView.swift */,
 				660BB2BE2AB32ABC00350DC5 /* IconName.swift */,
-				660BB2C92AB45E2E00350DC5 /* QuestionView.swift */,
+				66DBA4B12AC45EAB003F116E /* HomeView */,
+				660BB2C82AB45D1700350DC5 /* TabBar */,
+				66DBA4B22AC45EB7003F116E /* QuestionView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -136,6 +136,25 @@
 				660BB2C42AB3308A00350DC5 /* MediumTabBar.swift */,
 			);
 			path = TabBarExperiments;
+			sourceTree = "<group>";
+		};
+		66DBA4B12AC45EAB003F116E /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				663055722AA0D69300E61766 /* AlarmCell.swift */,
+				663055892AAE119100E61766 /* HomeView.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		66DBA4B22AC45EB7003F116E /* QuestionView */ = {
+			isa = PBXGroup;
+			children = (
+				66DBA4AD2AC32433003F116E /* QuestionCell.swift */,
+				660BB2C92AB45E2E00350DC5 /* QuestionView.swift */,
+				66DBA4B32AC469CA003F116E /* SortPicker.swift */,
+			);
+			path = QuestionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				660BB2B92AB1B73D00350DC5 /* TabBarModel.swift in Sources */,
+				66DBA4B42AC469CA003F116E /* SortPicker.swift in Sources */,
 				663055652AA0D26B00E61766 /* ContentView.swift in Sources */,
 				660BB2C72AB45B7F00350DC5 /* TabBarView.swift in Sources */,
 				663055632AA0D26B00E61766 /* WakeMeUpAppApp.swift in Sources */,
