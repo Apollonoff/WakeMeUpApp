@@ -20,7 +20,7 @@ struct TabBarView: View {
                     }
                 }
                 .toolbarBackground(Color(cgColor: tabBarColor), for: .tabBar)
-            Text("Questions")
+            QuestionView()
                 .tag(1)
                 .tabItem {
                     VStack {

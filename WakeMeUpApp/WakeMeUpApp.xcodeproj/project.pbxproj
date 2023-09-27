@@ -23,6 +23,7 @@
 		6630557A2AAB2B1B00E61766 /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663055792AAB2B1B00E61766 /* QuizModel.swift */; };
 		6630557F2AAB5A7300E61766 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6630557E2AAB5A7300E61766 /* Colors.swift */; };
 		6630558A2AAE119100E61766 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663055892AAE119100E61766 /* HomeView.swift */; };
+		66DBA4AE2AC32433003F116E /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DBA4AD2AC32433003F116E /* QuestionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		663055792AAB2B1B00E61766 /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
 		6630557E2AAB5A7300E61766 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		663055892AAE119100E61766 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		66DBA4AD2AC32433003F116E /* QuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			children = (
 				660BB2C82AB45D1700350DC5 /* TabBar */,
 				6630557E2AAB5A7300E61766 /* Colors.swift */,
+				66DBA4AD2AC32433003F116E /* QuestionCell.swift */,
 				663055722AA0D69300E61766 /* AlarmCell.swift */,
 				663055892AAE119100E61766 /* HomeView.swift */,
 				660BB2BE2AB32ABC00350DC5 /* IconName.swift */,
@@ -214,6 +217,7 @@
 				663055732AA0D69300E61766 /* AlarmCell.swift in Sources */,
 				660BB2B72AB0D9CD00350DC5 /* CustomTabBar.swift in Sources */,
 				6630557F2AAB5A7300E61766 /* Colors.swift in Sources */,
+				66DBA4AE2AC32433003F116E /* QuestionCell.swift in Sources */,
 				663055782AAB27DB00E61766 /* Data.swift in Sources */,
 				660BB2CA2AB45E2E00350DC5 /* QuestionView.swift in Sources */,
 				6630557A2AAB2B1B00E61766 /* QuizModel.swift in Sources */,

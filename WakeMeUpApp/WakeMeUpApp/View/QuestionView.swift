@@ -9,7 +9,17 @@ import SwiftUI
 
 struct QuestionView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color(cgColor: bgColor).ignoresSafeArea()
+            ScrollView {
+                QuestionCell()
+                QuestionCell()
+                QuestionCell()
+                QuestionCell()
+                QuestionCell()
+                QuestionCell()
+            }
+        }
     }
 }
 
