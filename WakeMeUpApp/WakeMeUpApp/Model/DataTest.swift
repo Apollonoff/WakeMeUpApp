@@ -21,6 +21,8 @@ struct DataTest: View {
                             Text(quiz.question ?? "noone")
                             Text(quiz.correctAnswer ?? "")
                             Text(quiz.difficulty ?? "")
+                            Text(quiz.category ?? "")
+                            
                         }
                         
                     }
