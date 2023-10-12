@@ -8,9 +8,9 @@
 import SwiftUI
 
 enum complexity: String {
-    case easy = "Easy"
-    case medium = "Medium"
-    case hard = "Hard"
+    case easy
+    case medium
+    case hard
     
     var customColor: CGColor {
         switch self {
@@ -25,11 +25,12 @@ enum complexity: String {
 }
 
 struct QuestionCell: View {
+    var questionName: String
     var body: some View {
         HStack {
             Spacer()
             VStack {
-                QuestionName()
+                QuestionName(question: questionName)
                     .padding(10)
                 QuestionDivider()
                 ComplexityGenreView()
@@ -71,8 +72,9 @@ struct HeartButtonView: View {
 //MARK: - Question Name
 
 struct QuestionName: View {
+    var question: String
     var body: some View {
-        Text("How old are you?")
+        Text(question)
             .lineLimit(nil)
             .font(.title)
             .foregroundColor(Color(cgColor: fontColor))
@@ -82,6 +84,7 @@ struct QuestionName: View {
 //MARK: - Complexity and Genre
 
 struct ComplexityView: View {
+    var difficulty: String
     var body: some View {
         Text(complexity.easy.rawValue)
             .lineLimit(nil)
@@ -106,7 +109,7 @@ struct ComplexityGenreView: View {
         HStack {
             Spacer()
             ComplexityCircle()
-            ComplexityView()
+            ComplexityView(difficulty: "easy")
             Spacer()
             Rectangle().fill(Color(dividerColor)).frame(width: 1)
             Spacer()
@@ -143,7 +146,7 @@ struct ComplexityCircle: View {
 
 struct QuestionCell_Previews: PreviewProvider {
     static var previews: some View {
-        QuestionCell()
+        QuestionCell(questionName: "How old are you")
     }
 }
 

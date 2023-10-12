@@ -8,18 +8,26 @@
 import SwiftUI
 
 struct QuestionView: View {
+    
+    @StateObject var viewModel = ViewModel()
+    
     var body: some View {
         ZStack {
             Color(cgColor: bgColor).ignoresSafeArea()
             VStack {
                 SortPicker()
                 ScrollView {
-                    QuestionCell()
-                    QuestionCell()
-                    QuestionCell()
-                    QuestionCell()
-                    QuestionCell()
-                    QuestionCell()
+                    QuestionCell(questionName: "bbbg")
+                    QuestionCell(questionName: "bbbg")
+                    QuestionCell(questionName: "bbbg")
+                    QuestionCell(questionName: "bbbg")
+                    QuestionCell(questionName: "bbbg")
+                    QuestionCell(questionName: "bbbg")
+//                    QuestionCell()
+//                    QuestionCell()
+//                    QuestionCell()
+//                    QuestionCell()
+//                    QuestionCell()
                 }
             }
         }
